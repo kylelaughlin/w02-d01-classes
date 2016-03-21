@@ -10,44 +10,14 @@ class Guitar
     @string_brand = options[:string_brand]
   end
 
-  def model
-    @model
-  end
+  attr_reader :model
 
-  def model=(new_model)
-    @model = new_model
-  end
+  attr_reader :brand
 
-  def brand
-    @brand
-  end
+  attr_accessor :pickup_type
 
-  def brand=(new_brand)
-    @brand = new_brand
-  end
+  attr_accessor :color
 
-  def pickup_type
-    @pickup_type
-  end
+  attr_accessor :string_brand
 
-  def pickup_type=(new_pickup_type)
-    @pickup_type = new_pickup_type
-  end
-
-  def color
-    @color
-  end
-
-  def color=(new_color)
-    @color = new_color
-  end
-
-  def string_brand
-    @string_brand
-  end
-
-  def string_brand=(new_string_brand)
-    @string_brand = new_string_brand
-  end
-  
 end
