@@ -8,6 +8,7 @@ class Soda
     @volume = options[:volume]
     @sugar = options[:sugar]
     @parent_company = options[:parent_company]
+    @price = options[:price]
   end
 
   def brand
@@ -48,5 +49,13 @@ class Soda
   def parent_company=(new_parent_company)
     @parent_company = new_parent_company
   end
-  
+
+  def price
+    @price
+  end
+
+  def price=(new_price)
+    @price = new_price
+  end
+
 end
