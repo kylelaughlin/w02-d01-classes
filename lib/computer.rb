@@ -7,7 +7,7 @@ class Computer
     @harddrive_size = options[:harddrive_size]
     @screen_size = options[:screen_size]
     @ram = options[:ram]
-    @processor_speed = option[:processor_speed]
+    @processor_speed = options[:processor_speed]
   end
 
   def brand
