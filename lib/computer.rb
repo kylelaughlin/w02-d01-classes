@@ -10,4 +10,24 @@ class Computer
     @processor_speed = option[:processor_speed]
   end
 
+  def brand
+    @brand
+  end
+
+  def harddrive_size
+    @harddrive_size
+  end
+
+  def screen_size
+    @screen_size
+  end
+
+  def ram
+    @ram
+  end
+
+  def processor_speed
+    @processor_speed
+  end
+
 end
