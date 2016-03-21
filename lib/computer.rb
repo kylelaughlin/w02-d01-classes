@@ -50,4 +50,11 @@ class Computer
     @processor_speed = new_processor_speed
   end
 
+  def upgrade_ram(ram_added)
+    @ram += ram_added
+    puts "Upgraded to #{@ram} GBs of ram."
+  end
+
 end
+
+binding.pry
