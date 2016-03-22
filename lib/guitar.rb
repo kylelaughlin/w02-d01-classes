@@ -3,14 +3,13 @@ require 'pry'
 class Guitar
 
   attr_reader :model, :brand
-  attr_accessor :pickup_type, :color, :string_brand
+  attr_accessor :pickup_type, :color
 
-  def initialize(options={})
-    @model = options[:model]
-    @brand = options[:brand]
-    @pickup_type = options[:pickup_type]
-    @color = options[:color]
-    @string_brand = options[:string_brand]
+  def initialize(model:, brand:, pickup_type:, color:)
+    @model = model
+    @brand = brand
+    @pickup_type = pickup_type
+    @color = color
   end
 
 end
