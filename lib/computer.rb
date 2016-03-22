@@ -50,9 +50,15 @@ class Computer
     @processor_speed = new_processor_speed
   end
 
+  # Upgrades the ram by the integer passed as a parameter and puts the new ram amount
+  #
+  # +ram_added: an integer representing the amount of ram to be added
+  #
+  # Returns the amount of the new total ram
   def upgrade_ram(ram_added)
     @ram += ram_added
     puts "Upgraded to #{@ram} GBs of ram."
+    @ram
   end
 
 end
