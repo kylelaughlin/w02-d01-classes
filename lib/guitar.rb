@@ -14,16 +14,4 @@ class Guitar
     @string_brand = options[:string_brand]
   end
 
-  #These should be moved to the top
-=begin
-  attr_reader :model
-
-  attr_reader :brand
-
-  attr_accessor :pickup_type
-
-  attr_accessor :color
-
-  attr_accessor :string_brand
-=end
 end
