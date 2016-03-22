@@ -2,7 +2,6 @@ require 'pry'
 
 class Guitar
 
-  #move attr_reader, _writer, & _accessor here
   attr_reader :model, :brand
   attr_accessor :pickup_type, :color, :string_brand
 
