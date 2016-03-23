@@ -1,10 +1,11 @@
 require 'pry'
 require_relative "soda.rb"
+require_relative "guitar_player.rb"
 
 class Guitar
 
   attr_reader :model, :brand
-  attr_accessor :pickup_type, :color
+  attr_accessor :pickup_type, :color, :sweet_riffs_executed
 
   #Construction method for Guitar
   #
@@ -20,6 +21,16 @@ class Guitar
     @pickup_type = pickup_type
     @color = color
     @soda = nil
+    @player = nil
+    @sweet_riffs_executed = 0
+  end
+
+  def player
+    @player
+  end
+
+  def player=(player)
+    @player = player
   end
 
   def soda

@@ -12,6 +12,7 @@ class Soda
     @sugar = sugar
     @parent_company = parent_company
     @sodas_drank = 0
+    @guitar = nil
   end
 
   # Increases @sodas_drank up by one
@@ -30,4 +31,3 @@ class Soda
   end
 
 end
-binding.pry
