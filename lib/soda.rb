@@ -14,6 +14,9 @@ class Soda
     @sodas_drank = 0
   end
 
+  # Increases @sodas_drank up by one
+  #
+  # Returns sodas_drank
   def drink_a_soda
     @sodas_drank += 1
   end

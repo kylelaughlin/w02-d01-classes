@@ -23,15 +23,19 @@ class Guitar
     soda.guitar = self
   end
 
+  # Guitar object plays a sweet riff displays message and calls take_a_drink
+  #
+  # Returns nil
   def play_sweet_riff
     puts "You played a face melting riff!"
     take_a_drink
   end
 
+  # Calls the drink_a_soda method in the Soda class and displays a message
+  #
+  # Returns nil
   def take_a_drink
     soda.drink_a_soda
     puts "You drank your soda!"
   end
 end
-
-binding.pry
