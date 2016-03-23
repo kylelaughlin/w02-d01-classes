@@ -63,4 +63,30 @@ class SodaTest < Minitest::Test
     assert_equal("Coca Cola", soda.parent_company)
   end
 
+  def test_sodas_drank_getter
+    soda = Soda.new(brand: "Mt. Dew", calories: 250, volume: 20, sugar: 20, parent_company: "Pepsi")
+    assert_equal(0,soda.sodas_drank)
+  end
+
+  def test_sodas_drank_setter
+    soda = Soda.new(brand: "Mt. Dew", calories: 250, volume: 20, sugar: 20, parent_company: "Pepsi")
+    soda.sodas_drank = 1
+    assert_equal(1, soda.sodas_drank)
+  end
+
+  def test_drink_a_soda
+    soda = Soda.new(brand: "Mt. Dew", calories: 250, volume: 20, sugar: 20, parent_company: "Pepsi")
+    soda.drink_a_soda
+    assert_equal(1,soda.sodas_drank)
+  end
+
+  def test_assign_to_a_guitar
+    soda = Soda.new(brand: "Mt. Dew", calories: 250, volume: 20, sugar: 20, parent_company: "Pepsi")
+    guitar = Guitar.new(model: "Les Paul", brand: "Gibson", pickup_type: "Humbuckers", color: "Red")
+    assert_nil(soda.guitar)
+    soda.guitar = guitar
+    refute_nil(soda.guitar)
+  end
+  
+
 end
