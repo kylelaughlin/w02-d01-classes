@@ -6,6 +6,14 @@ class Guitar
   attr_reader :model, :brand
   attr_accessor :pickup_type, :color
 
+  #Construction method for Guitar
+  #
+  # +model: string
+  # +brand: string
+  # +pickup_type: string
+  # +color: string
+  #
+  # Constructs the Guiar object
   def initialize(model:, brand:, pickup_type:, color:)
     @model = model
     @brand = brand
