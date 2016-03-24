@@ -16,7 +16,15 @@ class GuitarPlayer
     @guitar
   end
 
+  def guitar=(guitar)
+    @guitar = guitar
+  end
+
   def pick_a_guitar=(new_guitar)
+    if !new_guitar.player.nil?
+      old_player = new_guitar.player
+      old_player.guitar = nil
+    end
     @guitar = new_guitar
     new_guitar.player = self
   end

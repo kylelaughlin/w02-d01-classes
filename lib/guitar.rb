@@ -7,7 +7,7 @@ class Guitar
   attr_reader :model, :brand
   attr_accessor :color, :sweet_riffs_executed
 
-  #Construction method for Guitar
+  # Construction method for Guitar
   #
   # +model: string
   # +brand: string

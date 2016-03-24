@@ -115,7 +115,7 @@ end
 
   choice = -1
   while choice != 0
-    
+
     puts "\nCurrent guitar player: #{current_player.name}" unless current_player.nil?
     puts "Current guitar: #{current_guitar.color} #{current_guitar.model}" unless current_guitar.nil?
     puts "\n\nYour choices are:\n1. Create a new guitar player\n2. Create a new guitar\n3. Select a player\n4. Select a guitar\n5. View current player and guitar stats\n6. PLAY A SWEET RIFF\n0. Exit"
@@ -145,4 +145,5 @@ end
     else
       puts "\n\nNot a valid selection. Please select again."
     end
+    binding.pry
   end
