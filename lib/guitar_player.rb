@@ -27,4 +27,3 @@ class GuitarPlayer
   end
 
 end
-binding.pry

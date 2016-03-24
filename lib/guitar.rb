@@ -5,7 +5,7 @@ require_relative "soda.rb"
 class Guitar
 
   attr_reader :model, :brand
-  attr_accessor :pickup_type, :color, :sweet_riffs_executed
+  attr_accessor :color, :sweet_riffs_executed
 
   #Construction method for Guitar
   #
@@ -18,7 +18,6 @@ class Guitar
   def initialize(model:, brand:, color:)
     @model = model
     @brand = brand
-    @pickup_type = pickup_type
     @color = color
     @soda = nil
     @player = nil

@@ -1,5 +1,5 @@
 require 'pry'
-require_relative "guitar.rb"
+#require_relative "guitar.rb"
 
 class Soda
 
