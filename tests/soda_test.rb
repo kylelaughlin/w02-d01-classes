@@ -82,11 +82,11 @@ class SodaTest < Minitest::Test
 
   def test_assign_to_a_guitar
     soda = Soda.new(brand: "Mt. Dew", calories: 250, volume: 20, sugar: 20, parent_company: "Pepsi")
-    guitar = Guitar.new(model: "Les Paul", brand: "Gibson", pickup_type: "Humbuckers", color: "Red")
+    guitar = Guitar.new(model: "Les Paul", brand: "Gibson", color: "Red")
     assert_nil(soda.guitar)
     soda.guitar = guitar
     refute_nil(soda.guitar)
   end
-  
+
 
 end

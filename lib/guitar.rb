@@ -1,6 +1,6 @@
 require 'pry'
 require_relative "soda.rb"
-require_relative "guitar_player.rb"
+#require_relative "guitar_player.rb"
 
 class Guitar
 
@@ -15,7 +15,7 @@ class Guitar
   # +color: string
   #
   # Constructs the Guiar object
-  def initialize(model:, brand:, pickup_type:, color:)
+  def initialize(model:, brand:, color:)
     @model = model
     @brand = brand
     @pickup_type = pickup_type
